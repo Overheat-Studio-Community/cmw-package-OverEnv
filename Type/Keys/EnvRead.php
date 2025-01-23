@@ -11,6 +11,7 @@ namespace CMW\Type\OverEnv\Keys;
 enum EnvRead
 {
     case CMW_KEY;
+    case APIURL;
 
     public static function fromName(string $name): self
     {
