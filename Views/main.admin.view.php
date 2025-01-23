@@ -26,8 +26,16 @@ Website::setDescription(LangManager::translate('overenv.pages.main.description')
 
                 <div class="mt-4 space-y-3">
                     <div>
-                        <label for="create_key">
+                        <label for="create_key" class="flex">
                             <?= LangManager::translate('overenv.pages.main.add.key') ?>
+                            <div class="ml-1">
+                                <button data-tooltip-target="tooltip-top" data-tooltip-placement="top">
+                                    <i class="fas fa-circle-info"></i>
+                                </button>
+                                <div id="tooltip-top" role="tooltip" class="tooltip-content">
+                                    <?= LangManager::translate('overenv.pages.main.add.key_hint') ?>
+                                </div>
+                            </div>
                         </label>
                         <input type="text" class="input" id="create_key" name="create_key" required/>
                     </div>

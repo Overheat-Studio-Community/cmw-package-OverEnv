@@ -11,6 +11,7 @@ return [
             'add' => [
                 'title' => 'Ajouter une variable',
                 'key' => 'Clé',
+                'key_hint' => "Ne pas utiliser d'espaces, d'accents ou de caractères spéciaux !<br>Uniquement les underscore (_) sont autorisés.",
                 'value' => 'Valeur',
             ],
         ],

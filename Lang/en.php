@@ -11,6 +11,7 @@ return [
             'add' => [
                 'title' => 'Add a variable',
                 'key' => 'Key',
+                'key_hint' => "Do not use spaces, accents or special characters!<br>Only underscores (_) are allowed.",
                 'value' => 'Value',
             ],
         ],
