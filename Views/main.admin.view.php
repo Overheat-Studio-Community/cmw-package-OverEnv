@@ -8,17 +8,17 @@ use CMW\Utils\Website;
 
 /* @var EnvEntity[] $envs */
 
-Website::setTitle(LangManager::translate('overenv.pages.main.title'));
-Website::setDescription(LangManager::translate('overenv.pages.main.description'));
+Website::setTitle(LangManager::translate('OverEnv.pages.main.title'));
+Website::setDescription(LangManager::translate('OverEnv.pages.main.description'));
 ?>
 
-<h3><i class="fa-solid fa-key"></i> <?= LangManager::translate('overenv.pages.main.title') ?></h3>
+<h3><i class="fa-solid fa-key"></i> <?= LangManager::translate('OverEnv.pages.main.title') ?></h3>
 
 <div class="grid-4 mt-4">
     <div class="col col-span-1">
         <div class="card">
             <div class="space-y-3">
-                <h6><?= LangManager::translate('overenv.pages.main.add.title') ?></h6>
+                <h6><?= LangManager::translate('OverEnv.pages.main.add.title') ?></h6>
             </div>
 
             <form method="post" action="manage/create">
@@ -27,13 +27,13 @@ Website::setDescription(LangManager::translate('overenv.pages.main.description')
                 <div class="mt-4 space-y-3">
                     <div>
                         <label for="create_key" class="flex">
-                            <?= LangManager::translate('overenv.pages.main.add.key') ?>
+                            <?= LangManager::translate('OverEnv.pages.main.add.key') ?>
                             <div class="ml-1">
                                 <button data-tooltip-target="tooltip-top" data-tooltip-placement="top">
                                     <i class="fas fa-circle-info"></i>
                                 </button>
                                 <div id="tooltip-top" role="tooltip" class="tooltip-content">
-                                    <?= LangManager::translate('overenv.pages.main.add.key_hint') ?>
+                                    <?= LangManager::translate('OverEnv.pages.main.add.key_hint') ?>
                                 </div>
                             </div>
                         </label>
@@ -42,7 +42,7 @@ Website::setDescription(LangManager::translate('overenv.pages.main.description')
 
                     <div>
                         <label for="create_value">
-                            <?= LangManager::translate('overenv.pages.main.add.value') ?>
+                            <?= LangManager::translate('OverEnv.pages.main.add.value') ?>
                         </label>
                         <input type="text" class="input" id="create_value" name="create_value" required/>
                     </div>

@@ -44,7 +44,7 @@ class OverEnvAdminController extends AbstractController
             Flash::send(
                 Alert::ERROR,
                 LangManager::translate('core.toaster.error'),
-                LangManager::translate('overenv.toaster.error.fields_missing'),
+                LangManager::translate('OverEnv.toaster.error.fields_missing'),
             );
             Redirect::redirectPreviousRoute();
         }
@@ -56,7 +56,7 @@ class OverEnvAdminController extends AbstractController
             Flash::send(
                 Alert::ERROR,
                 LangManager::translate('core.toaster.error'),
-                LangManager::translate('overenv.toaster.error.variable_not_found'),
+                LangManager::translate('OverEnv.toaster.error.variable_not_found'),
             );
             Redirect::redirectPreviousRoute();
         }
@@ -65,7 +65,7 @@ class OverEnvAdminController extends AbstractController
             Flash::send(
                 Alert::ERROR,
                 LangManager::translate('core.toaster.error'),
-                LangManager::translate('overenv.toaster.error.unmodifiable_variable'),
+                LangManager::translate('OverEnv.toaster.error.unmodifiable_variable'),
             );
             Redirect::redirectPreviousRoute();
         }
@@ -76,7 +76,7 @@ class OverEnvAdminController extends AbstractController
             Flash::send(
                 Alert::ERROR,
                 LangManager::translate('core.toaster.error'),
-                LangManager::translate('overenv.toaster.error.unable_to_update_variable'),
+                LangManager::translate('OverEnv.toaster.error.unable_to_update_variable'),
             );
             Redirect::redirectPreviousRoute();
         }
@@ -84,7 +84,7 @@ class OverEnvAdminController extends AbstractController
         Flash::send(
             Alert::SUCCESS,
             LangManager::translate('core.toaster.success'),
-            LangManager::translate('overenv.toaster.success.variable_updated', ['key' => $key]),
+            LangManager::translate('OverEnv.toaster.success.variable_updated', ['key' => $key]),
         );
         Redirect::redirectPreviousRoute();
     }
@@ -98,7 +98,7 @@ class OverEnvAdminController extends AbstractController
             Flash::send(
                 Alert::ERROR,
                 LangManager::translate('core.toaster.error'),
-                LangManager::translate('overenv.toaster.error.fields_missing'),
+                LangManager::translate('OverEnv.toaster.error.fields_missing'),
             );
             Redirect::redirectPreviousRoute();
         }
@@ -110,7 +110,7 @@ class OverEnvAdminController extends AbstractController
             Flash::send(
                 Alert::ERROR,
                 LangManager::translate('core.toaster.error'),
-                LangManager::translate('overenv.toaster.error.variable_exists'),
+                LangManager::translate('OverEnv.toaster.error.variable_exists'),
             );
             Redirect::redirectPreviousRoute();
         }
@@ -119,7 +119,7 @@ class OverEnvAdminController extends AbstractController
             Flash::send(
                 Alert::ERROR,
                 LangManager::translate('core.toaster.error'),
-                LangManager::translate('overenv.toaster.error.unable_to_create_variable'),
+                LangManager::translate('OverEnv.toaster.error.unable_to_create_variable'),
             );
             Redirect::redirectPreviousRoute();
         }
@@ -127,7 +127,7 @@ class OverEnvAdminController extends AbstractController
         Flash::send(
             Alert::SUCCESS,
             LangManager::translate('core.toaster.success'),
-            LangManager::translate('overenv.toaster.success.variable_created', ['key' => $key]),
+            LangManager::translate('OverEnv.toaster.success.variable_created', ['key' => $key]),
         );
         Redirect::redirectPreviousRoute();
     }
